@@ -3,12 +3,12 @@
     "description": "Module to rule your yandex metrika counters.",
     "type":"library",
     "license":"MIT",
-	"repositories": [
+    "repositories": [
     	{
     		"type": "vcs",
     		"url": "https://github.com/octo-web/yii2-yandex-metrika"
     	}
-	],
+    ],
     "require": {
         "php-curl-class/php-curl-class": "*"
     },
