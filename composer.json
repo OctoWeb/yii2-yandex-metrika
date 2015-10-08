@@ -2,8 +2,8 @@
     "name": "octo-web/yii2-yandex-metrika",
     "description": "Module to rule your yandex metrika counters.",
     "type":"library",
+    "license":"MIT",
     "require": {
-        "php": ">=5.4.0",
         "php-curl-class/php-curl-class": "*"
     },
     "autoload": {
