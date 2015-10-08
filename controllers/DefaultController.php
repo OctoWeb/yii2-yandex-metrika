@@ -1,10 +1,10 @@
 <?php
 
-namespace octo-web\YandexMetrika\controllers;
+namespace octoweb\YandexMetrika\controllers;
 
 use Yii;
 use backend\components\MyController as Controller;
-use octo-web\YandexMetrika\models\YmSettingsParams;
+use octoweb\YandexMetrika\models\YmSettingsParams;
 use yii\data\ArrayDataProvider;
 use Curl\Curl;
 
