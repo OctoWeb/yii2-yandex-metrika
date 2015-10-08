@@ -1,0 +1,22 @@
+{
+    "name": "octo-web/yii2-yandex-metrika",
+    "description": "Module to rule your yandex metrika counters.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"," yandex metrika"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Octo Web",
+            "email": "admin@octo-web.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "php-curl-class/php-curl-class": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "octo-web\\YandexMetrika\\": ""
+        }
+    }
+}
