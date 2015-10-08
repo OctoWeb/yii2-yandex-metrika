@@ -1,8 +1,8 @@
 <?php
 
-namespace octo-web\YandexMetrika;
+namespace octoweb\YandexMetrika;
 
-use octo-web\YandexMetrika\models\YmSettingsParams;
+use octoweb\YandexMetrika\models\YmSettingsParams;
 use Curl\Curl;
 use yii\web\HttpException;
 use yii\helpers\ArrayHelper;
@@ -16,7 +16,7 @@ class Module extends \yii\base\Module {
     const METHOD_PUT = 'put';
     const METHOD_DELETE = 'delete';
 
-    public $controllerNamespace = 'octo-web\YandexMetrika\controllers';
+    public $controllerNamespace = 'octoweb\YandexMetrika\controllers';
     
     public $OAuthToken = null;
     public $apiUrl = 'http://api-metrika.yandex.ru';
