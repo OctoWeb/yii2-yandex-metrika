@@ -1,16 +1,19 @@
 {
     "name": "octo-web/yii2-yandex-metrika",
     "description": "Module to rule your yandex metrika counters.",
-    "type":"library",
-    "license":"MIT",
-    "repositories": [
-    	{
-    		"type": "vcs",
-    		"url": "https://github.com/octo-web/yii2-yandex-metrika"
-    	}
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"," yandex metrika"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Octo Web",
+            "email": "admin@octo-web.ru"
+        }
     ],
     "require": {
-        "php-curl-class/php-curl-class": "*"
+        "php-curl-class/php-curl-class": "*",
+        "miloschuman/yii2-highcharts-widget": "*",
+        "kartik-v/yii2-grid": "*"
     },
     "autoload": {
         "psr-4": {
