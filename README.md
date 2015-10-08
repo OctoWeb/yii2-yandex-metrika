@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist octo-web/yii2-yandex-metrika "*"
+php composer.phar require --prefer-dist octoweb/yii2-yandex-metrika "*"
 ```
 
 or add
 
 ```
-"octo-web/yii2-yandex-metrika": "*"
+"octoweb/yii2-yandex-metrika": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -32,7 +32,7 @@ Once the extension is installed, simply activate module in config file:
     ......
    'modules' => [
         'yandex-metrika' => [
-            'class' => 'octo-web\YandexMetrika\Module'
+            'class' => 'octoweb\YandexMetrika\Module'
         ],
     ],
     ......
@@ -42,6 +42,6 @@ Once the extension is installed, simply activate module in config file:
 
 Run migration. Module will create own table for migration history tbl_ym_migrations
 ```php
-yii migrate/up --migrationPath=@vendor/octo-web/yii2-yandex-metrika/migrations --migrationTable=tbl_ym_migrations
+yii migrate/up --migrationPath=@vendor/octoweb/yii2-yandex-metrika/migrations --migrationTable=tbl_ym_migrations
 ```
 .
