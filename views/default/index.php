@@ -7,7 +7,8 @@ use yii\data\ArrayDataProvider;
 
 use kartik\form\ActiveForm;
 use kartik\widgets\DatePicker;
-use kartik\grid\GridView;
+//use kartik\grid\GridView;
+use yii\grid\GridView;
 
 use miloschuman\highcharts\Highcharts;
 
@@ -66,7 +67,7 @@ function sec_to_time($seconds) {
 } 
 echo GridView::widget([
     'dataProvider'=> new ArrayDataProvider(['allModels'=>$returt->row]),
-    'export'=>false,
+    //'export'=>false,
     'columns' => [
         ['attribute' => 'date',
             'header'=>'Дата',
@@ -103,10 +104,10 @@ echo GridView::widget([
             }
         ],
     ],
-    'responsive'=>true,
+    /*'responsive'=>true,
     'hover'=>true,
     'floatHeader'=>true,
     'panel' => [
         'type' => GridView::TYPE_DEFAULT,
-    ]
+    ]*/
 ]);?>
