@@ -1,6 +1,6 @@
 <?php
 
-namespace octo-web\YandexMetrika\models;
+namespace octoweb\YandexMetrika\models;
 
 use Yii;
 
