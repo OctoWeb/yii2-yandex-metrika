@@ -65,7 +65,7 @@ function sec_to_time($seconds) {
     $seconds = $seconds % 60; 
     return sprintf("%d:%02d:%02d", $hours, $minutes, $seconds); 
 }
-ArrayHelper::multisort($returt['row'],'id',SORT_DESC);
+ArrayHelper::multisort($returt->row,'id',SORT_DESC);
 echo GridView::widget([
     'dataProvider'=> new ArrayDataProvider(['allModels'=>$returt->row]),
     'columns' => [
