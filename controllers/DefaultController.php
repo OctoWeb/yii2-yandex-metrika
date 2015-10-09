@@ -77,7 +77,7 @@ class DefaultController extends Controller {
                     for($i=0;$i<$count;$i++){
                         $returt['row'][]=(array)$response->data->row[$i];
                     }
-                    \yii\helpers\ArrayHelper::multisort($returt['row'],'id',SORT_DESC);
+                    
                 }else
                     $returt['row'][]=(array)$response->data->row;
                 return $this->render('index', ['returt' => (object)$returt]);

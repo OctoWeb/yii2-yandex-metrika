@@ -64,10 +64,10 @@ function sec_to_time($seconds) {
     $minutes = floor($seconds % 3600 / 60); 
     $seconds = $seconds % 60; 
     return sprintf("%d:%02d:%02d", $hours, $minutes, $seconds); 
-} 
+}
+ArrayHelper::multisort($returt['row'],'id',SORT_DESC);
 echo GridView::widget([
     'dataProvider'=> new ArrayDataProvider(['allModels'=>$returt->row]),
-    //'export'=>false,
     'columns' => [
         ['attribute' => 'date',
             'header'=>'Дата',
@@ -103,11 +103,5 @@ echo GridView::widget([
                 
             }
         ],
-    ],
-    /*'responsive'=>true,
-    'hover'=>true,
-    'floatHeader'=>true,
-    'panel' => [
-        'type' => GridView::TYPE_DEFAULT,
-    ]*/
+    ]
 ]);?>
